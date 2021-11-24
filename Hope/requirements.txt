@@ -1,0 +1,4 @@
+nltk
+Flask
+Flask-CORS
+torch

@@ -1,0 +1,84 @@
+{
+  "intents": [
+    {
+      "tag": "Saudacaoo",
+      "patterns": [
+        "ola",
+        "oi",
+        "boa tarde",
+        "bom dia",
+        "boa noite",
+        "Ola",
+        "Oi",
+        "Boa tarde",
+        "Bom dia"
+      ],
+      "responses": ["Ola!", "Oi!", "Bom dia!"]
+    },
+    {
+      "tag": "Adeus",
+      "patterns": ["Adeus", "Tchau"],
+      "responses": ["Adeus", "Tchau", "Passar bem"]
+    },
+    {
+      "tag": "Osasco",
+      "patterns": ["Osasco", "osasco"],
+      "responses": ["Toma cuidado com Osasco", "Cuidado com Osasco"]
+    },
+    {
+      "tag": "Jaison",
+      "patterns": ["Professor Jaison"],
+      "responses": [
+        "O professor Jaison foi o professor responsavel por ensinar nossa equipe a ferramentas:HTML5, CSS3, JavaScript, MySQL e Java"
+      ]
+    },
+    {
+      "tag": "Nome",
+      "patterns": [
+        "Poderia me dizer seu nome?",
+        "Qual seu nome?",
+        "Como devo te chamar?",
+        "Quem é você"
+      ],
+      "responses": [
+        "Eu me chamo Hope, fui criada com o intuito de tirar suas duvidas sobre o site."
+      ]
+    },
+
+    {
+      "tag": "Criador",
+      "patterns": ["Quem te programou?"],
+      "responses": [
+        "Fui programado pela Equipe 7 do Instituo Proa, composto por Bruno Costa Prado, Guilherme Oliveira, Beatriz Francelino, Camila Correia, Naiara Santiago, Jeferson Fagundes"
+      ]
+    },
+
+    {
+      "tag": "Pai",
+      "patterns": ["Quem é seu pai?", "Quem te criou?"],
+      "responses": [
+        "Fui programado por Bruno Costa Prado, pode conferir o repositorio dele aqui:github.com/BrunoCostaPrado?tab=repositories"
+      ]
+    },
+
+    {
+      "tag": "Ajuda",
+      "patterns": [
+        "Poderia meu ajudar?",
+        "Poderia me tirar uma duvida?",
+        "Estou com duvidas"
+      ],
+      "responses": ["Como posso ajudar", "Mas é claro."]
+    },
+
+    {
+      "tag": "Codigo",
+      "patterns": [
+        "Poderia me fornecer seu codigo?",
+        "Onde fica armazenado seu codigo?",
+        "Onde fica seu codigo?"
+      ],
+      "responses": ["Meu codigo esta aqui:github.com/BrunoCostaPrado/Hope"]
+    }
+  ]
+}
