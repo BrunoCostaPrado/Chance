@@ -53,7 +53,6 @@
       ]
     },
 
-
     {
       "tag": "Ajuda",
       "patterns": [
@@ -72,6 +71,12 @@
         "Onde fica seu codigo?"
       ],
       "responses": ["Meu codigo esta aqui:github.com/BrunoCostaPrado/Hope"]
+    },
+    { "tag": "Chance", "patterns": ["Oque é a Chance?"], "responses": "" },
+    {
+      "tag": "Samuel",
+      "patterns": ["O bot do Samuel é bom?"],
+      "responses": ["Bom ja exagero, mas funciona melhor que o Teams"]
     }
   ]
 }
