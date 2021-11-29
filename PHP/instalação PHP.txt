@@ -1,0 +1,10 @@
+1º- baixe o php:https://windows.php.net/downloads/releases/php-8.1.0-nts-Win32-vs16-x64.zip
+2º- coloque ele em uma pasta.
+3º- baixe o composer: https://getcomposer.org/Composer-Setup.exe
+4º- abra o composer e procure a pasta do php nele e finalize
+5º- abra um terminal na pasta php e insira o comando: composer install
+6º- aproveite.
+
+
+
+PS: não se todos tem que fazer isso.
