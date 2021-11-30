@@ -28,8 +28,7 @@ $item->unit_price = 75.56;
 $preference->items = array($item);
 $preference->save();
 ?>
-<!-- // SDK MercadoPago.js V2 -->
-<script src="https://sdk.mercadopago.com/js/v2"></script>
+
 
 <script>
 // Adicione as credenciais do SDK
@@ -48,6 +47,8 @@ $preference->save();
       }
 });
 </script>
-
+<!-- // SDK MercadoPago.js V2 -->
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+<script src="pagamento.js"></script>
 </body>
 </html>
