@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/login-icon.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/style.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=" author" content="Bruno Costa Prado, Guilherme Oliveira, Beatriz Francelino, Camila Correia, Naiara Santiago, Jeferson Fagundes ">
+    <meta name="description" content="DemoDay, Chance">
+    <link rel="shortcut icon"href="assets/images/login-icon.png"type="image/x-icon">
+    <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="Hope/style.css">
+    <meta name="google-signin-client_id" content="403727070129-ajucujjjbbe5g7m47ff760j50t8s4ov6.apps.googleusercontent.com">
+    <script src="js/login.js"></script>
     <title>Conta</title>
   </head>
   <body>
@@ -39,9 +37,7 @@
               <a href="#" class="social-icon">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
               <a href="#" class="social-icon">
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -76,6 +72,15 @@
               <a href="#" class="social-icon">
                 <i class="fab fa-linkedin-in"></i>
               </a>
+              <a href="#" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
             </div>
           </form>
         </div>
@@ -107,5 +112,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
 </html>
