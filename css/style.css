@@ -89,7 +89,7 @@ section {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -182,7 +182,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../image/banner-bg.jpeg) no-repeat;
+    background: url(../img/banner\ .jpeg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
