@@ -18,7 +18,7 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: initial;
     transition: all .2s linear;
 }
 
@@ -53,6 +53,23 @@ section{
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
+.vertodas{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.vertodas:hover{
+    background: var(--yellow);
+    color:var(--black);
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -67,7 +84,7 @@ section{
 
 .btn:hover{
     background: var(--yellow);
-    color:#fff;
+    color:var(--black);
 }
 
 .header{
@@ -111,7 +128,7 @@ section{
 
 .header .icons div:hover{
     background: var(--yellow);
-    color:#fff;
+    color:var(--black);
 }
 
 #menu-btn{
@@ -177,7 +194,7 @@ section{
 }
 
 .home .content h3{
-    color:var(--black);
+    color:#fff;
     font-size: 3rem;
 }
 
@@ -186,7 +203,7 @@ section{
 }
 
 .home .content p{
-    color:var(--light-color);
+    color:#fff;
     font-size: 1.7rem;
     padding:1rem 0;
     line-height: 1.8;
@@ -435,7 +452,7 @@ section{
 
 .footer .box-container .box .share a:hover{
     background: var(--yellow);
-    color: #fff;
+    color: var(--black);
 }
 
 .footer .box-container .box .email{
