@@ -28,6 +28,9 @@ Front-end: HTML5, CSS3 E JAVASCRIPT.
 </p>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
  width="30" height="30"  />
+ <p>Chat-bot: Python</p>
+ <img src="https://github.com/BrunoCostaPrado/devicon/blob/master/icons/python/python-original.svg"
+ width="30" height="30"  />
 <h2 id="autores">Autores:</h2>
 
 <a href="https://github.com/ibtriz"><p> • Beatriz Francelino Borges Carneiro</p> </a>
