@@ -1,7 +1,6 @@
-drop database chance;
 create database if not exists chance;
 use chance;
-CREATE TABLE CadastoAutonomo (
+CREATE TABLE if not exists CadastoAutonomo (
 Nome VARCHAR(80),
 Estado VARCHAR(30),
 Telefone INTEGER,
@@ -18,7 +17,7 @@ Estado_Civil VARCHAR(20),
 PRIMARY KEY(CPF)
 );
 
-CREATE TABLE CadastroCliente (
+CREATE TABLE if not exists CadastroCliente (
 Endereço VARCHAR(50),
 Genero VARCHAR(20),
 Email VARCHAR(40),
@@ -30,20 +29,18 @@ Cidade VARCHAR(50),
 CEP INTEGER,
 Estado_Civil VARCHAR(40),
 DataNasc INTEGER,
-IDPagamento VARCHAR(10)
 );
 
-CREATE TABLE Pagamento (
+CREATE TABLE if not exists Pagamento (
 PIX VARCHAR(100),
 Boleto INTEGER,
 Credito INTEGER,
 Debito INTEGER,
 IDPagamento integer PRIMARY KEY auto_increment,
-Transferencia INTEGER,
-PicPay VARCHAR(100)
+Transferencia INTEGER
 );
 
-CREATE TABLE Funcionario (
+CREATE TABLE if not exists Funcionario (
 CPF INTEGER PRIMARY KEY,
 Email VARCHAR(100),
 Endereço VARCHAR(100),
@@ -61,7 +58,7 @@ Historico_Escolar VARCHAR(30),
 Antecedente_Criminais VARCHAR(10)
 );
 
-CREATE TABLE Serviço (
+CREATE TABLE if not exists Serviço (
 Tipo VARCHAR(80),
 Data INTEGER,
 Quantidade INTEGER,
@@ -69,7 +66,7 @@ IdServiço INTEGER PRIMARY KEY
 );
 
 
-CREATE TABLE Solicitar (
+CREATE TABLE if not exists Solicitar (
     IdServiço INTEGER,
     CPF INTEGER,
     FOREIGN KEY (IdServiço)
@@ -81,7 +78,7 @@ CREATE TABLE Solicitar (
 
 
 
-CREATE TABLE Prove (
+CREATE TABLE if not exists Prove (
     CPF INTEGER,
     IdServiço INTEGER,
     FOREIGN KEY (CPF)
@@ -90,7 +87,7 @@ CREATE TABLE Prove (
         REFERENCES Serviço (IdServiço)
 );
 
-CREATE TABLE Pagar (
+CREATE TABLE if not exists Pagar (
     IDPagamento INTEGER,
     FOREIGN KEY (IDPagamento)
         REFERENCES Pagamento (IDPagamento),
@@ -100,7 +97,7 @@ CREATE TABLE Pagar (
 );
 
 
-CREATE TABLE Prover (
+CREATE TABLE if not exists Prover (
     IdServiço INTEGER,
     CPF INTEGER,
     FOREIGN KEY (IdServiço)
@@ -108,4 +105,3 @@ CREATE TABLE Prover (
     FOREIGN KEY (CPF)
         REFERENCES CadastoAutonomo (CPF)
 );
-show tables;
