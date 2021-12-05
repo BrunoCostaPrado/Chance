@@ -437,8 +437,6 @@ section{
 }
 
 
-/* media queries  */
-
 @media (max-width:991px) {
     html {
         font-size: 55%;
@@ -493,25 +491,6 @@ section{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
-
 @media (max-width:1200px){
 
     html{
@@ -554,12 +533,8 @@ section{
 
 @media (max-width:400px){
 
-    #menu-profile{
-        width: 100vw;
-    }
-
     .heading{
-        margin:0 3rem;
+        margin:100%;
     }
 
     .about .row .counter .box{
