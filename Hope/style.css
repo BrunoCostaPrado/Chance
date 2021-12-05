@@ -13,11 +13,11 @@ body {
 
 *,
 html {
-    --primaryGradient: linear-gradient(93.12deg, #581b98 0.52%, #9c1de7 100%);
-    --secondaryGradient: linear-gradient( 268.91deg, #581b98 -2.14%, #9c1de7 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #18A0FB 0.52%, #5bb1eb 100%);
+    --secondaryGradient: linear-gradient( 268.91deg, #18A0FB -2.14%, #5bb1eb 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581b98;
+    --primary: #18A0FB;
 }
 
 .chatbox {
@@ -58,7 +58,7 @@ html {
 .chatbox__header {
     position: sticky;
     top: 0;
-    background: orange;
+    background: #fdc645;
 }
 
 .chatbox__messages {
@@ -69,7 +69,7 @@ html {
 }
 
 .messages__item {
-    background: orange;
+    background: #fdc645;
     max-width: 60.6%;
     width: fit-content;
 }

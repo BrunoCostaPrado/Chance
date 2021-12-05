@@ -50,7 +50,7 @@ section {
     background: var(--yellow);
     color: #fff;
     display: inline-block;
-    padding: .5rem 3rem;
+    padding: .7rem 5rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
@@ -182,7 +182,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/banner\ .jpeg) no-repeat;
+    background: url(../img/banner\ \(3\).jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;

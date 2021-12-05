@@ -2,27 +2,28 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=" author" content="Bruno Costa Prado, Guilherme Oliveira, Beatriz Francelino, Camila Correia, Naiara Santiago, Jeferson Fagundes ">
     <meta name="description" content="DemoDay, Chance">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="Hope/style.css">
-    <title>Chance</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="Hope/style.css" />
+    <link rel="stylesheet" href="style/contatos.css">
+    <title>Contatos</title>
 </head>
 
 <body style="background-color: #f7f6f4;">
+
     <header class="header">
+
         <a href="index.html" class="logo"> <img src="image/logo.png" alt=""> </a>
 
         <nav class="navbar">
-            <a href="index.html">home</a>
+            <a href="index.html">Home</a>
             <a href="sobre copy.html">Sobre</a>
             <a href="categorias.html">Categorias</a>
             <a href="servicos.html">Serviços</a>
@@ -38,39 +39,65 @@
             </a>
         </div>
 
-        <form action="" class="search-form">
-            <input type="search" id="search-box" placeholder="Pesquise aqui..." />
-            <label for="search-box" class="fas fa-search"></label>
-        </form>
     </header>
+    <br><br><br><br><br><br><br>
+    <section class="contact">
+        <div class="content">
+            <h2 style="font-size: 60px;">Contato</h2>
 
-    <section class="categories" id="categories">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <div class="box-container">
-            <div class="box">
-                <img src="image/barbeiro.jpg" alt="" />
-                <h3>Lucas Barbeiro</h3>
-                <p>atendimento a domicílio</p>
-                <a href="#" class="btn">Ver perfil</a>
+            <p style="font-size: 15px;"><b>Ficou alguma dúvida? Teremos um grande prazer em ajudá-lo! </b>
+            </p>
+            <p style="font-size: 18px;">Caso precise de mais esclarecimentos, envie sua mensagem através do formulário que responderemos o mais breve possível. </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="https://img.icons8.com/glyph-neue/48/000000/user-location.png" /></div>
+                    <div class="text">
+                        <h3>Endereço</h3>
+                        <p>R. Pequetita, 111 - 1º andar - Vila Olímpia, São Paulo - SP, 04552-060</p>
+                    </div>
+                </div>
+                <br>
+                <div class="box">
+                    <div class="icon"><img src="https://img.icons8.com/material-outlined/48/000000/phone.png" /></div>
+                    <div class="text">
+                        <h3>Telefone</h3>
+                        <p>(11) 4002-8922</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/48/000000/external-email-advertising-kiranshastry-lineal-kiranshastry-1.png" /></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>chance@grupo07.com</p>
+                    </div>
+                </div>
             </div>
+            <br>
+            <div class="contactForm">
+                <form>
+                    <h2>Fale Conosco</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Nome</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Mensagem</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Enviar">
 
-            <div class="box">
-                <img src="image/cabeleireiro.jpg" alt="" />
-                <h3>Matheus cabeleireiro</h3>
-                <p></p>
-                <a href="#" class="btn">ver perfil</a>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-
 
     <section class="footer">
 
@@ -105,12 +132,12 @@
 
         </div>
 
-        <div class="credit"> © | <span>GRUPO 7 - PROA </span> |Todos os direitos reservados. </div>
+        <div class="credit"> © | <span>GRUPO 7 - PROA </span> | Todos os direitos reservados.</div>
 
     </section>
 
-
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
     <script src="js/script.js"></script>
     <div class="container">
@@ -118,20 +145,18 @@
             <div class="chatbox__support">
                 <div class="chatbox__header">
                     <div class="chatbox__image--header">
-                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image" />
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
                     </div>
                     <div class="chatbox__content--header">
                         <h4 class="chatbox__heading--header">Suporte</h4>
-                        <p class="chatbox__description--header">
-                            Ola. Meu nome é Hope. Como posso ajudar?
-                        </p>
+                        <p class="chatbox__description--header">Ola. Meu nome é Hope. Como posso ajudar?</p>
                     </div>
                 </div>
                 <div class="chatbox__messages">
                     <div></div>
                 </div>
                 <div class="chatbox__footer">
-                    <input type="text" placeholder="Escreva sua mensagem..." />
+                    <input type="text" placeholder="Escreva sua mensagem...">
                     <button class="chatbox__send--footer send__button">Enviar</button>
                 </div>
             </div>
@@ -141,6 +166,7 @@
         </div>
     </div>
     <script src="Hope/app.js"></script>
+
 </body>
 
 </html>
