@@ -9,30 +9,38 @@
 
 </head>
 <body>
-<div id="menu-profile">
+    <header class="header">
 
-    <div class="user">
-        <img src="image/maquiagem.jpg" alt="">
-        <h3 class="name">Laura</h3>
-        <p class="job">Maquiadora</p>
-    </div>
+        <a href="index.html" class="logo"> <img src="image/logo.png" alt=""> </a>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Olá</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contato</a></li>
-            <li><a href="categoriamaquiagem.html">Categoria Maquiagem</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="sobre copy.html">Sobre</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="blog.html">Blog</a>
+        </nav>
 
-</div>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="login.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+        </div>
 
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Pesquise aqui...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+    <br>
+    <br>
+    <br>
 <div id="menu" class="fas fa-bars"></div>
 
 <section class="home" id="home">
-
+    <img src="image/maquiagem.jpg" alt="">
     <h3>Olá!</h3>
     <h1>Eu sou <span>Laura</span></h1>
     <p>Desde de pequena, sempre fui apaixonada por maquiagem.Trabalhando com o que amo.</p>
@@ -90,6 +98,39 @@
     </div>
 
 </div>
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>
+                <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+            </h3>
+            <p>Acompanhe nossas redes sociais</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>links</h3>
+            <a href="# " class="links "> <i class="fas fa-arrow-right "></i>Voltar ao Inicio</a>
+
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>Se inscreva para receber novidades</p>
+            <input type="email" placeholder="email" class="email">
+            <input type="submit" value="Quero receber novidades" class="btn">
+        </div>
+
+    </div>
+
+    <div class="credit"> © | <span>GRUPO 7 - PROA </span> | all rights reserved </div>
 
 </section>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
