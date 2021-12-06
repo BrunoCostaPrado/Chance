@@ -28,7 +28,7 @@ Estado VARCHAR(40),
 Cidade VARCHAR(50),
 CEP INTEGER,
 Estado_Civil VARCHAR(40),
-DataNasc INTEGER,
+DataNasc INTEGER
 );
 
 CREATE TABLE if not exists Pagamento (
