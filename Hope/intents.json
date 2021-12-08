@@ -23,7 +23,11 @@
     {
       "tag": "Osasco",
       "patterns": ["Osasco", "osasco"],
-      "responses": ["Toma cuidado com Osasco", "Cuidado com Osasco", "Vish, so de ouvir falar, da ate um arrepio, tem que olhar para o ceu direto, ce sabe, la e meio embacado, mas e isso ai, eu conheco Osasco sim, Tem que colocar a mao no bolso,ve se eu nao to com algum pertecene aqui, porque a mulecada e rapida, toma voce rapido "]
+      "responses": [
+        "Toma cuidado com Osasco",
+        "Cuidado com Osasco",
+        "Vish, so de ouvir falar, da ate um arrepio, tem que olhar para o ceu direto, ce sabe, la e meio embacado, mas e isso ai, eu conheco Osasco sim, Tem que colocar a mao no bolso,ve se eu nao to com algum pertecene aqui, porque a mulecada e rapida, toma voce rapido "
+      ]
     },
     {
       "tag": "Jaison",
@@ -77,6 +81,11 @@
       "tag": "Samuel",
       "patterns": ["O bot do Samuel é bom?"],
       "responses": ["Bom ja exagero, mas funciona melhor que o Teams"]
+    },
+    {
+      "tag": "StepbyStep",
+      "patterns": ["Eu ouvi Step by Step?","Step by Step"],
+      "responses": ["Sai disso, todo dia isso."]
     }
   ]
 }
