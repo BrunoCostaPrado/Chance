@@ -74,9 +74,9 @@
         "Onde fica armazenado seu codigo?",
         "Onde fica seu codigo?"
       ],
-      "responses": ["Meu codigo esta aqui:github.com/BrunoCostaPrado/Hope"]
+      "responses": ["Meu codigo esta em github.com/BrunoCostaPrado/Hope"]
     },
-    { "tag": "Chance", "patterns": ["Oque é a Chance?"], "responses": "" },
+
     {
       "tag": "Samuel",
       "patterns": ["O bot do Samuel é bom?"],
@@ -91,7 +91,7 @@
       "tag": "Bruno",
       "patterns": ["Bruno Costa"],
       "responses": [
-        "Responsavel pelo back-end,18 Anos, proativo, insistente, comunicativo, tecnico em eletronica e ama​nte de hardware"
+        "Responsavel pelo back-end,18 Anos, proativo, insistente, comunicativo, tecnico em eletronica e amante de hardware"
       ]
     },
     {
@@ -126,38 +126,46 @@
       "tag": "Guilherme",
       "patterns": ["Guilherme Henrique"],
       "responses": [
-        "Responsavel pelo back-end, 18 anos, prestativo,esforçado,  positivo e ama musica"
+        "Responsavel pelo back-end, 18 anos, prestativo,esforçado, positivo e amante de musica"
       ]
     },
     {
       "tag": "Chance",
       "patterns": ["Qual a origem do nome?"],
-      "responses": ["O site possui esse nome, pois o cliente precisa dar uma chance ao autonomo"]
+      "responses": [
+        "O site possui esse nome, pois o cliente precisa dar uma chance ao autonomo"
+      ]
     },
     {
-      "tag":"Objetivo",
+      "tag": "Objetivo",
       "patterns": ["Qual o objetivo?"],
-      "responses": ["A Chance tem como objetivo ser um plataforma de divulgação para o trabalhador autonomo"]
+      "responses": [
+        "A Chance tem como objetivo ser um plataforma de divulgação para o trabalhador autonomo"
+      ]
     },
     {
-      "tag":"Tecnologias",
+      "tag": "Tecnologias",
       "patterns": ["Quais as tecnologias usadas?"],
-      "responses": ["As tecnologias usadas foram: HTML5, CSS5, JavaScript, Bootstrap para o Front-end e MySQL, Java, PHP e Python para o back-end."]
+      "responses": [
+        "As tecnologias usadas foram: HTML5, CSS5, JavaScript, Bootstrap para o Front-end e MySQL, Java, PHP e Python para o back-end."
+      ]
     },
     {
-      "tag":"Professores",
-      "patterns":["Quais foram os professores que os auxiliaram?"],
-      "responses":["Os professore que nos auxiliaram foram: O professor Jaison, o professor Wesley, a professora Adriana, a professora Aurora, a tutora Marta e a mentora Carol"]
+      "tag": "Professores",
+      "patterns": ["Quais foram os professores que os auxiliaram?"],
+      "responses": [
+        "Os professore que nos auxiliaram foram: O professor Jaison, o professor Wesley, a professora Adriana, a professora Aurora, a tutora Marta e a mentora Carol"
+      ]
     },
     {
-      "tag":"",
-      "patterns":[],
-      "responses":[]
+      "tag": "",
+      "patterns": [],
+      "responses": []
     },
     {
-      "tag":"",
-      "patterns":[],
-      "responses":[]
+      "tag": "",
+      "patterns": [],
+      "responses": []
     }
   ]
 }
