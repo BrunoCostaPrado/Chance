@@ -84,38 +84,80 @@
     },
     {
       "tag": "StepbyStep",
-      "patterns": ["Eu ouvi Step by Step?","Step by Step"],
+      "patterns": ["Eu ouvi Step by Step?", "Step by Step"],
       "responses": ["Sai disso, todo dia isso."]
     },
     {
-      "tag":"Bruno",
-      "patterns":["Bruno Costa"],
-      "responses":["Responsavel pelo back-end,18 Anos, proativo, insistente, comunicativo, tecnico em eletronica e ama​nte de hardware"]
+      "tag": "Bruno",
+      "patterns": ["Bruno Costa"],
+      "responses": [
+        "Responsavel pelo back-end,18 Anos, proativo, insistente, comunicativo, tecnico em eletronica e ama​nte de hardware"
+      ]
     },
     {
-      "tag":"Beatriz",
-      "patterns":["Beatriz Francelino"],
-      "responses":["Responsavel pelo front-end,19 Anos, redatora, pensamento criativo, planejamento, organizada, ama desenhar  e escrever."]
+      "tag": "Beatriz",
+      "patterns": ["Beatriz Francelino"],
+      "responses": [
+        "Responsavel pelo front-end,19 Anos, redatora, pensamento criativo, planejamento, organizada, ama desenhar  e escrever."
+      ]
     },
     {
-      "tag":"Naiara",
-      "patterns":["Naiara Santiago"],
-      "responses":["Responsavel pelo front-end, 21 Anos, comunicativa, esforçada, inteligente, espiríto de liderança, tecnico em computacao grafica, amo séries e filmes"]
+      "tag": "Naiara",
+      "patterns": ["Naiara Santiago"],
+      "responses": [
+        "Responsavel pelo front-end, 21 Anos, comunicativa, esforçada, inteligente, espiríto de liderança, tecnico em computacao grafica, amo séries e filmes"
+      ]
     },
     {
-      "tag":"Camila",
-      "patterns":["Camila Correia"],
-      "responses":["Responsavel pelo front-end, 20 Anos, assertiva, focada, prestativa, experiente, tecnico administracao de empresa e ama gatos"]
+      "tag": "Camila",
+      "patterns": ["Camila Correia"],
+      "responses": [
+        "Responsavel pelo front-end, 20 Anos, assertiva, focada, prestativa, experiente, tecnico administracao de empresa e ama gatos"
+      ]
     },
     {
-      "tag":"Jeferson",
-      "patterns":["Jeferson Fagundes"],
-      "responses":["Responsavel pelo back-end, 20 anos, trabalha sob pressão, focado, formado em informatica para internet e ama cultura japonesa ​"]
+      "tag": "Jeferson",
+      "patterns": ["Jeferson Fagundes"],
+      "responses": [
+        "Responsavel pelo back-end, 20 anos, trabalha sob pressão, focado, formado em informatica para internet e ama cultura japonesa ​"
+      ]
     },
-    {"tag":"Guilherme",
-    "patterns":["Guilherme Henrique"],
-    "responses":["Responsavel pelo back-end, 18 anos, prestativo, esforçado,​ positivo e ama musica"]
+    {
+      "tag": "Guilherme",
+      "patterns": ["Guilherme Henrique"],
+      "responses": [
+        "Responsavel pelo back-end, 18 anos, prestativo,esforçado,  positivo e ama musica"
+      ]
+    },
+    {
+      "tag": "Chance",
+      "patterns": ["Qual a origem do nome?"],
+      "responses": ["O site possui esse nome, pois o cliente precisa dar uma chance ao autonomo"]
+    },
+    {
+      "tag":"Objetivo",
+      "patterns": ["Qual o objetivo?"],
+      "responses": ["A Chance tem como objetivo ser um plataforma de divulgação para o trabalhador autonomo"]
+    },
+    {
+      "tag":"Tecnologias",
+      "patterns": ["Quais as tecnologias usadas?"],
+      "responses": ["As tecnologias usadas foram: HTML5, CSS5, JavaScript, Bootstrap para o Front-end e MySQL, Java, PHP e Python para o back-end."]
+    },
+    {
+      "tag":"Professores",
+      "patterns":["Quais foram os professores que os auxiliaram?"],
+      "responses":["Os professore que nos auxiliaram foram: O professor Jaison, o professor Wesley, a professora Adriana, a professora Aurora, a tutora Marta e a mentora Carol"]
+    },
+    {
+      "tag":"",
+      "patterns":[],
+      "responses":[]
+    },
+    {
+      "tag":"",
+      "patterns":[],
+      "responses":[]
     }
-
   ]
 }
