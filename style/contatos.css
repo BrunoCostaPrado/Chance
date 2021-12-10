@@ -13,7 +13,7 @@
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
-                                background: linear-gradient(to bottom, #fff 60%, #fdc645 40%);
+                                background: linear-gradient(-147deg, #fff 55%, #fdc645 45%);
                             }
                             
                             .contact .content {
@@ -54,7 +54,7 @@
                             .container .contactInfo .box .icon {
                                 min-width: 60px;
                                 height: 60px;
-                                background: #dcdcdc;
+                                background: #ffffff;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -65,21 +65,21 @@
                             .container .contactInfo .box .text {
                                 display: flex;
                                 margin-left: 20px;
-                                font-size: 16px;
-                                color: #000;
+                                font-size: 15px;
+                                color: rgb(255, 255, 255);
                                 flex-direction: column;
                                 font-weight: 300;
                             }
                             
                             .container .contactInfo .box .text h3 {
-                                font-weight: 300;
-                                color: #18A0FB;
+                                font-weight: 600;
+                                color: #0a0a0a;
                             }
                             
                             .contactForm {
                                 width: 40%;
                                 padding: 40px;
-                                background-color: #dcdcdc;
+                                background-color: #e7fbff;
                             }
                             
                             .contactForm h2 {
