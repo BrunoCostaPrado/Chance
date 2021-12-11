@@ -37,7 +37,7 @@ Front-end: HTML5, CSS3 E JAVASCRIPT.
 <a href="https://github.com/BrunoCostaPrado"><p> • Bruno Costa Prado</p> </a>
 <a href="https://github.com/Cameasy"><p> • Camila Correia Rocha Santos</p></a>
 <a href="https://github.com/guiH0l1"><p> • Guilherme Henrique de Jesus Oliveira</p></a>
-<a href="#"><p> • Jeferson Fagundes de Lima.jpg</p></a>
+<a href="https://github.com/JefersonFlima"><p> • Jeferson Fagundes de Lima</p></a>
 <a href="https://github.com/naiarascalmeida"><p> • Naiara Santiago Da Cruz Almeida</p></a>
 <h2 id="Visualização">Visualização:</h2>
 <div align="center">
