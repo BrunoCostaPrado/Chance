@@ -1,4 +1,4 @@
-criar o banco de dados chamado "registrar"
+criar o banco de dados chamado "registrar" 
 
 criar a tabela "imagens"
 dentro dela criar um id(com primary key e auto increment) e um "img_url" do tipo text
