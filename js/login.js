@@ -1,35 +1,3 @@
-// function onSignIn(googleUser) {
-//   var profile = googleUser.getBasicProfile();
-//   console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
-//   console.log("Name: " + profile.getName());
-//   console.log("Image URL: " + profile.getImageUrl());
-//   console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
-// }
-
-// function onSignIn(response) {
-//       // Conseguindo as informações do seu usuário:
-//       var perfil = response.getBasicProfile();
-
-//       // Conseguindo o ID do Usuário
-//       var userID = perfil.getId();
-
-//       // Conseguindo o Nome do Usuário
-//       var userName = perfil.getName();
-
-//       // Conseguindo o E-mail do Usuário
-//       var userEmail = perfil.getEmail();
-
-//       // Conseguindo a URL da Foto do Perfil
-//       var userPicture = perfil.getImageUrl();
-
-//       document.getElementById('user-photo').src = userPicture;
-//       document.getElementById('user-name').innerText = userName;
-//       document.getElementById('user-email').innerText = userEmail;
-
-//       // Recebendo o TOKEN que você usará nas demais requisições à API:
-//       var LoR = response.getAuthResponse().id_token;
-//       console.log("~ le Tolkien: " + LoR);
-//   };
 var startApp = function() {
     gapi.load('auth2', function(){
       auth2 = gapi.auth2.init({
