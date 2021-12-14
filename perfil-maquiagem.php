@@ -1,3 +1,4 @@
+<?php include 'conectarDB.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,10 +11,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="profile-page/style-perfil.css">
 
+    <style>
+        #enviar_img{
+            margin-top: 15px;
+        }
+        .box-container2{
+            float:left;
+            width: 25%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding:1rem 0;
+        }
+        .box2{
+            overflow: hidden;
+            height: 20rem;
+            width:26rem;
+            border-radius: 1rem;
+            margin:2rem;
+            cursor: pointer;
+        }
+        .box2:hover img{
+            transition: 1s;
+            transform: scale(1.2);
+        }
+        .box2::after{
+           content: "";
+           display: table;
+           clear: both;
+        }
+        .images_uploads{    
+            height:100%;
+            width:100%;
+            object-fit: cover;          
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-
+        <?php if(isset($_GET['error'])): ?>
+            <p><?php echo $_GET['error'];?></p>
+        <?php endif ?>
         <a href="index.html" class="logo"> <img src="image/logo.png" alt=""> </a>
 
         <nav class="navbar">
@@ -28,7 +66,7 @@
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
-            <a href="login.html">
+            <a href="login.php">
                 <div class="fas fa-user" id="login-btn"></div>
             </a>
         </div>
@@ -75,7 +113,14 @@
 <section class="portfolio" id="portfolio">
 
 <h1 class="heading">Meu <span>portfólio</span> </h1>
-
+<div class="box">
+    <center>
+    <form action="upload.php" method="POST" enctype="multipart/form-data" id="enviar_img">
+        <input type="file" name="my_image" id="mandar_img">
+        <input type="submit" name="enviar" value="upload">
+    </form>
+    </center>
+</div>
 <div class="box-container">
 
     <div class="box">
@@ -91,6 +136,17 @@
     <div class="box">
         <img src="image/maquiagem4.jpg" alt="">
     </div>
+    <?php 
+        $sql = "SELECT * FROM imagens ORDER BY id DESC";
+        $res = mysqli_query($conexao,$sql);
+            if(mysqli_num_rows($res)>0){
+                while($images = mysqli_fetch_assoc($res)){ ?> 
+                    <div class="box-container2">
+                        <div class="box2">
+                            <a href="uploads/<?=$images['img_url']?>"><img class="images_uploads" src="uploads/<?=$images['img_url']?>"></a>
+                        </div>
+                    </div>
+    <?php }}?>  
 </div>
 </section>
 <section class="contact" id="contact">

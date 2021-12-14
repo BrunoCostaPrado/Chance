@@ -1,0 +1,12 @@
+criar o banco de dados chamado "registrar" 
+
+criar a tabela "imagens"
+dentro dela criar um id(com primary key e auto increment) e um "img_url" do tipo text
+
+criar outra tabela chamada "registrarse"
+com id(primary key auto increment)
+user(varchar100)
+email(varchar100)
+senha(varchar100)
+code(text)
+

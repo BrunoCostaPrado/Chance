@@ -1,6 +1,41 @@
+<?php
+ 
+    include 'conectarDB.php';
+    $msg="";
+    if(isset($_POST['Submit'])){
+        
+        $user = mysqli_real_escape_string($conexao,$_POST['user']);
+        $email = mysqli_real_escape_string($conexao,$_POST['email']);
+        $senha = mysqli_real_escape_string($conexao,$_POST['senha']);
+        $code = mysqli_real_escape_string($conexao,md5(rand()));
+        
+        if(mysqli_num_rows(mysqli_query($conexao,"SELECT * FROM registrarse WHERE email='{$email}'"))>0){
+            $msg = '<script>alert("este email ja foi utilizado")</script>';
+        }else{
+            $sql = "INSERT INTO registrarse (user,email,senha,code) VALUES ('{$user}','{$email}','{$senha}','{$code}')";
+            $result = mysqli_query($conexao,$sql);
+            if($result){
+                $msg = '<script>alert("um codigo de verificação foi enviado a seu email")</script>';
+                
+            }else{
+                $msg = '<script>alert("houve algum erro no registro")</script>';
+            }
+        }
+    }if(isset($_POST['Entrar'])){
+        $email = mysqli_real_escape_string($conexao,$_POST['email']);
+        $senha = mysqli_real_escape_string($conexao,$_POST['senha']);
+
+        $sql = "SELECT * FROM registrarse WHERE email='{$email}' AND senha='{$senha}'";
+        $result = mysqli_query($conexao,$sql);
+        if(mysqli_num_rows($result)===1){
+            header("location:index.html");
+        }
+    }
+    
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +71,7 @@
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
-            <a href="login.html">
+            <a href="login.php">
                 <div class="fas fa-user" id="login-btn"></div>
             </a>
         </div>
@@ -45,17 +80,17 @@
     <div class="container">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form">
+                <form action="" class="sign-in-form" method="post">
                     <h2 class="title">Login</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuário" />
+                        <input type="text" placeholder="email" name="email" required/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Senha" />
+                        <input type="password" placeholder="Senha" name="senha" required/>
                     </div>
-                    <input type="submit" value="Entrar" class="btn solid" />
+                    <input type="submit" value="Entrar" class="btn solid" name="Entrar"/>
                     <p class="social-text">Ou faça Login com suas redes sociais</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -70,22 +105,23 @@
                         </a>
                     </div>
                 </form>
-                <form action="indexTC.html" class="sign-up-form">
+                <form action="" class="sign-up-form" method="post">
                     <h2 class="title">Registre-se</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuário" />
+                        <input type="text" placeholder="Usuário" name="user" required/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="E-mail" />
+                        <input type="email" placeholder="E-mail" name="email" required/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Senha" />
+                        <input type="password" placeholder="Senha" name="senha" required/>
                     </div>
-                    <input type="submit" class="btn" value="Registrar" />
+                    <input type="submit" class="btn" name="Submit"/>
                     <p class="social-text">Ou Registre-se usando suas redes sociais</p>
+   
                     <div class="social-media">
                         <a href="#" class="social-icon">
                             <i class="fab fa-facebook-f"></i>
