@@ -23,10 +23,10 @@ Front-end: HTML5, CSS3 E JAVASCRIPT.
 <br>
 <p>Banco de dados: MySQL
 </p>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="30" height="30" />
-<p>Back-end: JAVA
+<img src="https://github.com/BrunoCostaPrado/devicon/blob/master/icons/mysql/mysql-original.svg" width="30" height="30" />
+<p>Back-end: PHP
 </p>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+<img src="https://github.com/BrunoCostaPrado/devicon/blob/master/icons/php/php-original.svg"
  width="30" height="30"  />
  <p>Chat-bot: Python</p>
  <img src="https://github.com/BrunoCostaPrado/devicon/blob/master/icons/python/python-original.svg"
