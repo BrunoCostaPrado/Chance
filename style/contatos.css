@@ -13,7 +13,7 @@
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
-                                background: linear-gradient(-147deg, #fff 55%, #fdc645 45%);
+                                background: linear-gradient(-147deg, #fff 50%, #fdc645 50%);
                             }
                             
                             .contact .content {
@@ -79,7 +79,7 @@
                             .contactForm {
                                 width: 40%;
                                 padding: 40px;
-                                background-color: #e7fbff;
+                                background-color: #d3d3d3;
                             }
                             
                             .contactForm h2 {

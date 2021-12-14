@@ -14,7 +14,7 @@ body {
     bottom: 10px;
     left: 10px;
     display: none;
-    background: #18A0FB;
+    background: #a9a9a9;
     max-width: 365px;
     height: 310px;
     border-radius: 15px;
@@ -44,9 +44,9 @@ body {
     margin-right: 1em;
     border-radius: 5px;
     text-transform: uppercase;
-    background: #fdc645;
-    font-size: 12px;
+    background: #000;
+    font-size: 15px;
     font-weight: 500;
-    color: #000;
     cursor: pointer;
+    color: #fff;
 }
