@@ -7,6 +7,7 @@
     --border: .2rem solid rgba(0, 0, 0, .1);
     --outline: .1rem solid rgba(0, 0, 0, .1);
     --outline-hover: .2rem solid var(--black);
+    --black: #0D0D0D;
 
 }
 
@@ -36,7 +37,7 @@ html{
 
 
 body{
- background-color: #666772;
+ background-color: #D9D9D9;
 }
 
 section{
@@ -158,7 +159,7 @@ section{
     font-size: 4rem;
     padding:1rem;
     border-bottom: .1rem solid #eee;
-    color:#ffffff;
+    color:var(--black);
 }
 
 .heading span{
@@ -175,7 +176,7 @@ section{
 
 .home h3{
     font-size: 2.5rem;
-    color:#ffffff;
+    color:var(--black);
 }
 .home img{
     height:17rem;
@@ -187,7 +188,7 @@ section{
 }
 .home h1{
     font-size:5rem;
-    color:#ffffff;
+    color:var(--black);
 }
 
 .home h1 span{
@@ -196,7 +197,7 @@ section{
 
 .home p{
     font-size:2rem;
-    color:#ffffff;
+    color:var(--black);
     padding: 1rem 0;
 }
 
@@ -216,13 +217,13 @@ section{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:#ffffff;
+    color:var(--black);
     padding:1rem 0;
     font-weight: normal;
 }
 
 .about .row .info h3 span{
-    color:#ffffff;
+    color:var(--black);
     padding:0 .5rem;
 }
 
@@ -303,7 +304,7 @@ section{
     padding:1.5rem;
     margin:1rem 0;
     background:#ffffff;
-    color:#ffffff;
+    color:var(--black);
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
@@ -320,7 +321,7 @@ section{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:#ffffff;
+    color:var(--black);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -329,7 +330,7 @@ section{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#ffffff;
+    color:var(--black);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -340,7 +341,7 @@ section{
 }
 .contact .row .content .info h3 a{
     padding-right: 15rem;
-    color:#ffffff;
+    color:var(--black);
     height: 100;
 }
 
